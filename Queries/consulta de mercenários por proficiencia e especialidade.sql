@@ -1,0 +1,6 @@
+select documento.Documento_nome, especialidade.Especialidade_nome, mercenário_has_especialidade.Mercenário_has_Especialidade_proficiência as nivel_de_proficiencia
+from mercenário
+join documento on mercenário.Documento_Documentos_id = documento.Documentos_id
+join mercenário_has_especialidade on mercenário.Mercenários_id = mercenário_has_especialidade.Mercenário_Mercenários_id
+join especialidade on mercenário_has_especialidade.Especialidade_Especialidade_id = especialidade.Especialidade_id
+where especialidade.Especialidade_nome = "Magia";

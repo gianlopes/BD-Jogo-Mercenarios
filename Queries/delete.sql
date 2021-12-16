@@ -1,0 +1,1 @@
+delete from tipo_pagamento where tipo_pagamento.Tipo_Pagamento_id=10;

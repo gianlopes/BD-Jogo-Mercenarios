@@ -1,0 +1,1 @@
+insert into tipo_pagamento (Tipo_Pagamento_nome) values ("Test12");
